@@ -1,0 +1,31 @@
+<p-card header="Formulário de Solicitação" styleClass="formulario-card">
+  <form [formGroup]="formulario" class="formulario-grid">
+    <div class="campo" *ngFor="let campo of formulario.controls | keyvalue">
+      <label [for]="campo.key">
+        {{
+          {
+            codest: 'Código do Estacionamento',
+            codvag: 'Código da Vaga',
+            desest: 'Descrição do Estacionamento',
+            modvei: 'Modelo do Veículo',
+            numcad: 'Número de Cadastro',
+            numemp: 'Número do Empregado',
+            plavei: 'Placa do Veículo',
+            tipcol: 'Tipo de Colaborador',
+            CorVei: 'Cor do Veículo'
+          }[campo.key] || campo.key
+        }}
+      </label>
+      <input
+        pInputText
+        [id]="campo.key"
+        [formControlName]="campo.key"
+        [readonly]="readonly || campo.key === 'codest' || campo.key === 'desest'"
+      />
+    </div>
+
+    <div class="acoes" *ngIf="!readonly">
+      <button pButton type="button" label="Processar" (click)="processar()"></button>
+    </div>
+  </form>
+</p-card>

@@ -25,6 +25,7 @@ import { BadgeModule } from 'primeng/badge';
 import { TagModule } from 'primeng/tag';
 
 import { InputComponent } from '@senior-hcm-service-tower/hst-input';
+import { FormularioSolicitacaoComponent } from './components/formulario-solicitacao/formulario-solicitacao.component';
 
 const NG_COMPONENTS = [
   ButtonModule,
@@ -52,12 +53,13 @@ const NG_COMPONENTS = [
 ];
 
 const CUSTOM_COMPONENTS = [
-  // -- Adicionar componentes criados no shared
-]
+  FormularioSolicitacaoComponent
+];
 
 @NgModule({
   declarations: [
-    ...CUSTOM_COMPONENTS
+    ...CUSTOM_COMPONENTS,
+    FormularioSolicitacaoComponent
   ],
   imports: [
     CommonModule,

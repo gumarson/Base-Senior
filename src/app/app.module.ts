@@ -16,6 +16,7 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { MessagesModule } from 'primeng/messages';
+import { SharedModule } from './shared/shared.module';
 
 
 const HTTP_INTERCEPTORS_PROVIDERS = [
@@ -34,11 +35,12 @@ const APP_INITIALIZER_PROVIDERS = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    SharedModule,
     AppRoutingModule,
     ToastModule,
     ProgressSpinnerModule,
