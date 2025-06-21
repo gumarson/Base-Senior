@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+.p-dropdown {
+  width: 100%;
+}
+
+p-calendar span {
+  width: 100%;
+}
+
+.p-inputtext {
+  width: 100%;
+}
+
+.title {
+  color: #26a69a!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase !important
+}
+
+.p-dialog-title {
+  color: #26a69a!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase !important
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #111;
+}

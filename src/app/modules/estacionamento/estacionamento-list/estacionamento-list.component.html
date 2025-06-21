@@ -1,0 +1,44 @@
+<!-- Dropdown -->
+<div class="estacionamento-header">
+  <label for="estacionamento">Estacionamento</label>
+  <select id="estacionamento" [(ngModel)]="selectedCodest" (ngModelChange)="onCodestChange()">
+    <option [value]="null">-- Escolha --</option>
+    <option *ngFor="let est of estacionamentos" [value]="est.codest">
+      {{ est.desest }}
+    </option>
+  </select>
+</div>
+
+<hr />
+
+<!-- Cards -->
+<!-- Cards -->
+<div class="vagas-grid" *ngIf="vagasCarregadas">
+  <div class="vaga-card" *ngFor="let vaga of getVagasFiltradas()"
+       [ngStyle]="{ 'background-color': isVagaLivre(vaga) ? '#e7f9e7' : normalizarCor(vaga.CorVei) }">
+
+    <ng-container *ngIf="isVagaLivre(vaga); else ocupada">
+      <div class="vaga-livre-conteudo">
+        LIVRE
+      </div>
+    </ng-container>
+
+    <ng-template #ocupada>
+      <div class="vaga-header">{{ vaga.codvag }} - {{ vaga.tipcol }}</div>
+      <div class="vaga-dado">{{ vaga.modvei }}</div>
+      <div class="vaga-dado">{{ vaga.plavei }}</div>
+      <div class="vaga-dado">{{ vaga.numemp }}/{{ vaga.numcad }}</div>
+    </ng-template>
+
+  </div>
+</div>
+
+
+<!-- Botão -->
+<div class="action-button-container" *ngIf="vagasCarregadas">
+  <button
+    (click)="handleBotaoPrincipal()"
+    [ngClass]="{ 'reservar': temVagaLivre(), 'admin': !temVagaLivre() }">
+    {{ temVagaLivre() ? 'Reservar vaga' : 'Solicitar Admin' }}
+  </button>
+</div>

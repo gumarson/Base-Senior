@@ -1,0 +1,226 @@
+{
+  "rubi": {
+    "com.senior.teste": {
+      "com.senior.estacionamento": {
+        "vagaEstacionamento": {
+          "buscarVagas": {
+            "contents": [
+              {
+                "codest": "1",
+                "codvag": 1,
+                "desest": "ESTACIONAMENTO REAL",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Branco"
+              },
+              {
+                "codest": "2",
+                "codvag": 2,
+                "desest": "ESTACIONAMENTO DO MANEZINHO",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Cinza"
+              },
+              {
+                "codest": "2",
+                "codvag": 3,
+                "desest": "ESTACIONAMENTO DO MANEZINHO",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Cinza"
+              },
+              {
+                "codest": "2",
+                "codvag": 4,
+                "desest": "ESTACIONAMENTO DO MANEZINHO",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Cinza"
+              },
+              {
+                "codest": "2",
+                "codvag": 5,
+                "desest": "ESTACIONAMENTO DO MANEZINHO",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Cinza"
+              },
+              {
+                "codest": "1",
+                "codvag": 6,
+                "desest": "ESTACIONAMENTO REAL",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Branco"
+              },
+              {
+                "codest": "2",
+                "codvag": 7,
+                "desest": "ESTACIONAMENTO DO MANEZINHO",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Cinza"
+              },
+              {
+                "codest": "2",
+                "codvag": 8,
+                "desest": "ESTACIONAMENTO DO MANEZINHO",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Cinza"
+              },
+              {
+                "codest": "2",
+                "codvag": 9,
+                "desest": "ESTACIONAMENTO DO MANEZINHO",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Cinza"
+              },
+              {
+                "codest": "2",
+                "codvag": 10,
+                "desest": "ESTACIONAMENTO DO MANEZINHO",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ABD2225",
+                "tipcol": "PF",
+                "CorVei": "Cinza"
+              },
+              {
+                "codest": "1",
+                "codvag": 11,
+                "desest": "ESTACIONAMENTO REAL",
+                "modvei": "GOL",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "ASD2523",
+                "tipcol": "PF",
+                "CorVei": "Branco"
+              },
+              {
+                "codest": "3",
+                "codvag": 12,
+                "desest": "ESTACIONAMENTO AZUL",
+                "modvei": "HB20",
+                "numcad": "2",
+                "numemp": "2",
+                "plavei": "ASD2025",
+                "tipcol": "PF",
+                "CorVei": "Azul"
+              },
+              {
+                "codest": "1",
+                "codvag": 13,
+                "desest": "ESTACIONAMENTO REAL",
+                "modvei": "HB20",
+                "numcad": "2",
+                "numemp": "2",
+                "plavei": "ASD2025",
+                "tipcol": "PF",
+                "CorVei": "Azul"
+              },
+              {
+                "codest": "5",
+                "codvag": 14,
+                "desest": "",
+                "modvei": "X7",
+                "numcad": "2",
+                "numemp": "2",
+                "plavei": "PPP2526",
+                "tipcol": "PF",
+                "CorVei": "Preto"
+              },
+              {
+                "codest": "6",
+                "codvag": 15,
+                "desest": "",
+                "modvei": "HONDA CIVIC",
+                "numcad": "1",
+                "numemp": "1",
+                "plavei": "BBB2I55",
+                "tipcol": "PF",
+                "CorVei": "Prata"
+              },
+              {
+                "codest": "4",
+                "codvag": 20,
+                "desest": "",
+                "modvei": "TESTE",
+                "numcad": "2",
+                "numemp": "2",
+                "plavei": "TESTE",
+                "tipcol": "PF",
+                "CorVei": "Verde"
+              }
+            ],
+            "responseCode": 200
+          },
+          "buscarEstacionamento": {
+            "contents": [
+              {
+                "codest": "1",
+                "desest": "ESTACIONAMENTO REAL",
+                "qtdvag": "5"
+              },
+              {
+                "codest": "2",
+                "desest": "ESTACIONAMENTO DO MANEZINHO",
+                "qtdvag": "1"
+              },
+              {
+                "codest": "3",
+                "desest": "ESTACIONAMENTO AZUL",
+                "qtdvag": "2"
+              },
+              {
+                "codest": "4",
+                "desest": "TESTE",
+                "qtdvag": "1"
+              },
+              {
+                "codest": "5",
+                "desest": "COSTA ESTACIONAMENTO",
+                "qtdvag": "1"
+              },
+              {
+                "codest": "6",
+                "desest": "ESTACIONAMENTO MARCHAL",
+                "qtdvag": "1"
+              }
+            ],
+            "responseCode": 200
+          }
+        }
+      }
+    }
+  }
+}
