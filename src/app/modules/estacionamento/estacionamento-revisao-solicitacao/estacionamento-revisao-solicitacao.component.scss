@@ -1,0 +1,18 @@
+.botoes-finalizar {
+  margin-top: 20px;
+  text-align: center;
+
+  button {
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #0062cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #004999;
+  }
+}

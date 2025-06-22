@@ -1,1 +1,29 @@
-<p>estacionamento-chamado-admin works!</p>
+<div class="admin-container">
+  <h2 class="titulo">Painel Administrativo de Estacionamento</h2>
+
+  <button type="button" class="btn-excluir" (click)="excluirVagas()">Excluir Vagas</button>
+
+  <table class="tabela-vagas">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Estacionamento</th>
+        <th>Status</th>
+        <th>Cor do Veículo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vaga of vagas">
+        <td>{{ vaga.codvag }}</td>
+        <td>{{ vaga.desest }}</td>
+        <td>{{ vaga.vagaLivre ? 'Livre' : 'Ocupada' }}</td>
+        <td>
+          <span *ngIf="!vaga.vagaLivre" [style.color]="vaga.CorVei">
+            {{ vaga.CorVei }}
+          </span>
+          <span *ngIf="vaga.vagaLivre">—</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
