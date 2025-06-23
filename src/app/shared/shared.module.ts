@@ -26,6 +26,8 @@ import { TagModule } from 'primeng/tag';
 
 import { InputComponent } from '@senior-hcm-service-tower/hst-input';
 import { FormularioSolicitacaoComponent } from './components/formulario-solicitacao/formulario-solicitacao.component';
+import { FormularioVeiculoComponent } from './components/formulario-veiculo/formulario-veiculo.component';
+
 
 const NG_COMPONENTS = [
   ButtonModule,
@@ -59,7 +61,8 @@ const CUSTOM_COMPONENTS = [
 @NgModule({
   declarations: [
     ...CUSTOM_COMPONENTS,
-    FormularioSolicitacaoComponent
+    FormularioSolicitacaoComponent,
+    FormularioVeiculoComponent
   ],
   imports: [
     CommonModule,
@@ -71,6 +74,7 @@ const CUSTOM_COMPONENTS = [
     ...NG_COMPONENTS,
     ReactiveFormsModule,
     FormsModule,
+    FormularioVeiculoComponent,
     ...CUSTOM_COMPONENTS
   ]
   })

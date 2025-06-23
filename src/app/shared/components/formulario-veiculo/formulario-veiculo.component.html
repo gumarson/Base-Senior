@@ -1,0 +1,28 @@
+<p-panel header="Dados do Veículo">
+  <form [formGroup]="veiculoForm" (ngSubmit)="submitFormulario()">
+
+    <div class="field">
+      <label for="nome">Nome</label>
+      <input pInputText id="nome" formControlName="nome" />
+    </div>
+
+    <div class="field">
+      <label for="placa">Placa</label>
+      <input pInputText id="placa" formControlName="placa" />
+    </div>
+
+    <div class="field">
+      <label for="cor">Cor</label>
+      <input pInputText id="cor" formControlName="cor" />
+    </div>
+
+    <div class="field">
+      <label for="observacao">Observação</label>
+      <textarea pInputTextarea rows="3" formControlName="observacao"></textarea>
+    </div>
+
+    <div class="flex justify-content-end" *ngIf="!onlyView">
+      <button pButton type="submit" label="Enviar" class="p-button-success"></button>
+    </div>
+  </form>
+</p-panel>
