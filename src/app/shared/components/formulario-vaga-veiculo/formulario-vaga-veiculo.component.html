@@ -1,0 +1,69 @@
+<form [formGroup]="formularioVeiculo" class="p-fluid">
+  <div class="field">
+    <label for="modelo">Modelo</label>
+    <input
+      id="modelo"
+      type="text"
+      pInputText
+      formControlName="modelo"
+      placeholder="Ex: Fiat Uno"
+    />
+    <small
+      class="p-error"
+      *ngIf="formularioVeiculo.get('modelo')?.invalid && formularioVeiculo.get('modelo')?.dirty"
+    >
+      Modelo é obrigatório.
+    </small>
+  </div>
+
+  <div class="field">
+    <label for="ano">Ano</label>
+    <input
+      id="ano"
+      type="text"
+      pInputText
+      formControlName="ano"
+      placeholder="Ex: 2020"
+    />
+    <small
+      class="p-error"
+      *ngIf="formularioVeiculo.get('ano')?.invalid && formularioVeiculo.get('ano')?.dirty"
+    >
+      Ano é obrigatório e deve conter 4 dígitos.
+    </small>
+  </div>
+
+  <div class="field">
+    <label for="placa">Placa</label>
+    <input
+      id="placa"
+      type="text"
+      pInputText
+      formControlName="placa"
+      placeholder="Ex: ABC1D23"
+    />
+    <small
+      class="p-error"
+      *ngIf="formularioVeiculo.get('placa')?.invalid && formularioVeiculo.get('placa')?.dirty"
+    >
+      Placa é obrigatória.
+    </small>
+  </div>
+
+  <div class="field">
+    <label for="cor">Cor</label>
+    <input
+      id="cor"
+      type="text"
+      pInputText
+      formControlName="cor"
+      placeholder="Ex: Prata"
+    />
+    <small
+      class="p-error"
+      *ngIf="formularioVeiculo.get('cor')?.invalid && formularioVeiculo.get('cor')?.dirty"
+    >
+      Cor é obrigatória.
+    </small>
+  </div>
+</form>

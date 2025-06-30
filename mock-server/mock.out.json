@@ -1,0 +1,18 @@
+{
+  "rubi": {
+    "com.senior.teste": {
+      "buscarDadosTeste": {
+        "retorno": [
+          {
+            "nome": "João",
+            "idade": 25
+          },
+          {
+            "nome": "Maria",
+            "idade": 30
+          }
+        ]
+      }
+    }
+  }
+}

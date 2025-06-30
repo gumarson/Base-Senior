@@ -1,0 +1,24 @@
+<p-toast />
+@if(validaVersao) {
+  <div class="col-12 text-right text-xs text-400">
+    <p>Versão {{ ambiente }}.{{ versao }}</p>
+  </div>
+}
+
+<!-- Carrega página -->
+@if (complete) {
+  @if (versaoInvalida) {
+    <p-messages severity="error">
+      <ng-template pTemplate>
+        <i class="pi pi-history"></i>
+          <div class="ml-2">Fluxo desatualizado! Atualize a página e caso o erro persista, entre em contato com o administrador do sistema.</div>
+        </ng-template>
+      </p-messages>
+    } @else {
+    <router-outlet></router-outlet>
+  }
+} @else {
+  <div class="col-12 text-center">
+    <p-progressSpinner ariaLabel="loading" />
+  </div>
+}
